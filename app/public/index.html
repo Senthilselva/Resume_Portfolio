@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
-  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
 
   <script src = "assets/javascript/app.js" type="text/javascript"> </script>
 
@@ -31,8 +31,8 @@
     </div>
     <ul class="nav navbar-nav navbar-right">
         <!-- <li class="active"><a href="index.html">About Me</a></li> -->
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="#">Porfolio</a></li>
+        <li><a href="/">About Me</a></li>
+        <li><a href="/portfolio">Porfolio</a></li>
         <li><a href = "#" class="contactLink">Contact</a></li>
     </ul>
 </div> <!-- container Nav bar-->
@@ -48,7 +48,14 @@
       <img src="assets/Images/profile_pic.jpg" class="img-responsive img-rounded profolioPic" alt="Senthil Picture">
       </div> 
       <div class="col-md-8">
-      <p class="lSize">I am Senthil Selvakumar. Welcome to my page. I am a full stack developer. Very  inquisitive and flexible problem solver, I have always been attracted to new opportunities to learn.</p> <p class="lSize"> I am currently enrolled in Rutgers Coding Bootcamp which has re-energized my love for writing code and making it to work.</p> <p class="lSize">I love Gardening. I am also a  Volunteer Teacher at NJ Thiruvalluvar Tamil School.</p>
+      <p class="lSize">I am Senthil Selvakumar. Welcome to my page. I am a full stack developer. Very  inquisitive and flexible problem solver, I have always been attracted to new opportunities to learn. </p>
+
+       <p class="lSize"> Full Stack Web Developer, with passion for all aspects of web development.Extensively well versed with both front end and back end development, specializing in  JavaScript, JQuery HTML,CSS, Bootstrap and Media Queries, Node.js and have an innate love for learning new NPM packages. Have strong experience with Relational Databases - MySQL and Oracle and also have a  good understanding of Firebase database.</p>
+
+        <p class="lSize"><b> Specialties:</b> Node.js, express, Mysql, Sequelize, Handlebars, firebase, JavaScript, JQuery, CSS, HTML 5,Bootstrap, media-query.</p>
+
+
+       <p class="lSize">I love Gardening. I am also a  Volunteer Teacher at NJ Thiruvalluvar Tamil School.</p>
       </div>
 		</div>
 		<div class = "col-md-2" id = "contactBox"> 
@@ -77,24 +84,36 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Send me an Email</h4>
+        <h4 class="modal-title">Send me an e-mail</h4>
+        <div id="errMsg"> </div>
       </div>
 
-      <div class="modal-body">
-          <label><h4>E Mail:</h4></label><br>
-          <input id="txtEmail" type="email" placeholder="Email-id"><br>
-  
-          <label><h4>Message:</h4></label>
-          <textarea class="form-control" id="txtText" rows="6" placeholder="Message"></textarea>
-      </div>
+      <form class="create-form" >
+      <!-- action="/mail" method="POST"> -->
+        <div class="modal-body">
+            <label><h4>E Mail:</h4></label><br>
+            <input id="EmailId" type="email" placeholder="Email-id" name="email"><br>
+    
+            <label><h4>Message:</h4></label>
+            <textarea class="form-control" id="txtText" rows="6" placeholder="Message" name="message"></textarea>
+        </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send</button>
-      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+         
+          <button type = "button" class="btn btn-primary" id="sendMail">Send</button>
+
+          <!-- <button type="submit" class="btn btn-primary" id="sendMail">Send</button> -->
+        </div>
+      </form>
+
     </div>
   </div>
 </div>
 <!-- End Modal -->
 
 </body>
+
+</html>
+

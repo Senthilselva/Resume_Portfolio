@@ -1,25 +1,35 @@
 // ===============================================================================
-// LOAD DATA
-// We are linking our routes to a series of "data" sources.
-// These data sources hold arrays of information on table-data, waitinglist, etc.
-// ===============================================================================
-
-var friends = require('../data/friends.js');
-
-// ===============================================================================
 // ROUTING
 // ===============================================================================
+var nodemailer = require('nodemailer');
+
+var transporter = nodemailer.createTransport('smtps://senthilbackup42%40gmail.com:kitehigh@smtp.gmail.com');
 
 module.exports = function (app) {
 
-	// API GET Requests
-	// Below code handles when users "visit" a page.
-	// In each of the below cases when a user visits a link
-	// (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
-	// ---------------------------------------------------------------------------
 
-	app.get('/api/friendlist', function (req, res) {
-		res.json(friends);
+	app.post('/mail', function (req, res) {
+
+		console.log('Req   '+ JSON.stringify(req.body));
+		var senderMail= '"" <'+ req.body.email + '>';
+		var subjectVar = "Message from  "+ req.body.email;
+		var textVar= req.body.message; 
+
+			var mailOptions = {
+		    from: senderMail, // sender address 
+		    to: 'senthilselvak@gmail.com', // list of receivers 
+		    subject: subjectVar, // Subject line 
+		    text: textVar, // plaintext body 
+		    html: '<b>'+ textVar +'</b>' // html body 
+		    };
+
+   		transporter.sendMail(mailOptions, function(error, info){
+	    if(error){
+	        throw error;
+	    }
+    		res.send('Message sent: ' + info.response);
+		});
+
 	});
 
 
