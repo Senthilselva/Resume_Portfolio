@@ -16,6 +16,7 @@ module.exports = function (app) {
 	// ---------------------------------------------------------------------------
 
 	app.get('/', function (req, res) {
+		console.log(__dirname + '/../public/index.html');
 		res.sendFile(path.join(__dirname + '/../public/index.html'));
 	});
 
