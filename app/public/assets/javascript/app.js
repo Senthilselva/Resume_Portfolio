@@ -27,7 +27,7 @@ var createSkillBadges= function(divName){
 
 
 		var imgTag = $("<img>");
-		imgTag.attr("src", "assets/images/"+skillArr[i]+".png")
+		imgTag.attr("src", "assets/images/project/"+skillArr[i]+".png")
 		skillChip.text(skillArr[i]);
 		skillChip.append(imgTag)
 		
