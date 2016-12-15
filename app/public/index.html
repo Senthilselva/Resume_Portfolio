@@ -1,331 +1,272 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<html>
+<head>
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
 
-      <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
 
-      <!-- Compiled and minified CSS materialize -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
-      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!--contume css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- For fsding in and out -->
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
-    </head>
+</head>
+<body>
+<!-- Nav bar -->
+<nav class = "blue-grey">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Senthil S</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>          
+    <ul class="right hide-on-med-and-down">
+      <li> <a href ="#"><i class="material-icons left">store</i>Home</a></li>
+      <li> <a href ="#contact"><i class="material-icons left">contacts</i>Contact</a></li>
+      <li> <a href ="#profile"><i class="material-icons left">assignment</i>Profile</a></li>
+    </ul>
 
-    <body>
-    <nav class = "brown darken-2">
-      <div class="col m2 s1  lighten-4-text">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo"><img src="assets/Images/logo.png" class="logoImg"> </a>
-        </div>
-      </div> 
+    <ul class="side-nav blue-grey  darken-1" id="mobile-demo">
+      <li><a href ="">Home</a></li>
+      <li><a href ="">Contact</a></li>
+      <li><a href ="">Profile</a></li>
+    </ul>
+  </div>
+</nav>
+<!--end navbar -->
 
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li> <a href =""><i class="material-icons left">store</i>Home</a></li>
+<!-- <div class="parallax-container"> -->
+  <!-- <div class="parallax"> </div> -->
+	<!-- my name with annimation -->
+	
+	<div class="row centerbadge">
+	    <h1 class="blue-grey-text text-darken-3 animated fadeInLeft">Senthil Selvakumar</h1>
+	    <h5 class="blue-grey-text text-darken-3 animated fadeInRight">Fullstack Web developer</h5>
+	    <div class = "col m6 skillMainPage"></div>
+	</div>
+<!-- <div class="parallax"> </div> -->
 
-              <li> <a href =""><i class="material-icons left">contacts</i>Contact</a></li>
+	<div class="row buttonDiv">
+		<div class="col m8"></div>
+		<div class="col m2">
+			<a href="#aboutMe" class="waves-effect waves-light blue-grey btn-large"><i class="material-icons left"></i>About ME</a>
+		</div>
+		<div class="col m2">
+			<a href="#contact" class="waves-effect waves-light blue-grey btn-large"><i class="material-icons left"></i>Contact</a>
+		</div>
+		<div class="col m4"></div>
+	</div>
 
-              <li> <a href =""><i class="material-icons left">assignment</i>Profile</a></li>
-      </ul>
-    </nav>
+<!-- picture and story -->
+<div class="solidMiddle">
+	<section id="aboutMe">
+		<h2 class="blue-grey-text text-darken-4"> About Me </h2>
+	
+		<div class= "row"><!-- row 1 -->
+    		<div class = "col m4"> <!-- card div -->
+        			<div class="card horizontal transparent">
+          					<div class="card-image">
+            					<img  src="assets/Images/profile_pic.jpg"">
+          					</div>
+	          				<div class="card-stacked">
+						        <div class="card-content">
+						        	<p class= "blue-grey-text text-darken-4">Web Developer</p>
+						            <p class= "blue-grey-text text-darken-4">Phone: 201-993-2892</p> 
+						            <p class= "blue-grey-text text-darken-4">Email: senthilselvak@gmail.com</p>
+						        </div>
+	          				</div> <!-- card Stacked-->
+        				</div><!-- horizontal -->
+     		</div> <!--card div-->
 
-    <div class="parallax-container">
-      <div class="parallax"><img src="assets/Images/background.jpg"></div>
-    <div class="centerbadge brown lighten-5">
-       <h1 class="brown-text text-darken-2">Senthil Selvakumar</h1>
-       <h5 class="brown-text text-darken-4">Fullstack Web developer</h5>
-    </div>
+     		<div class = "col m8"> <!--story-->
+     			<div class="card">
+            		<div class="card-content blue-grey-text text-darken-4">
+              			<h3 class="card-title">About Me</h3>
+                		<p>Welcome to my page. As an inquisitive and flexible problem solver, I have always been attracted to new learning opportunities to further my skillset. </p>
 
-    </div> <!-- parallax-->
-<!-- nav bar in the middle -->
+                		<p> My training as a Full Stack Web Developer has imbued me with a passion for all aspects of web development. I am extensively well-versed with both front and back end web development, specializing in JavaScript, JQuery HTML, CSS, Node.js, Bootstrap and Media Queries, and have an innate love for learning new NPM packages. I have experience with relational databases, MySQL and Oracle, and a good understanding of the Firebase database. </p>
 
-
-
-<!-- ///////////////////My Details ///////////////////-->
-<!--///////////Heading ///////-->
-  <div class="row">
-      <div class="col s12 m12">
-        <div class="card transparent">
-          <span class="white-brown"><h1>About Me</h1>
-          </span>
-        </div>
-      </div>
-    </div>
-
-<!--///////////Heading ///////--> 
-
-<div class="parallax-container">
-  <div class="parallax"><img src="assets/Images/background.jpg"></div>
-
-
-  <div class= "row"><!-- row 1 -->
-    <div class = "col m6"> <!-- card div -->
-     <div class = "row">
-      <div class="col s12 m8">
-        <h5 class="header brown-text text-darken-2">Senthil Selvakumar</h5>
-        <div class="card horizontal transparent">
-          <div class="card-image">
-            <img  src="assets/Images/profile_pic.jpg"">
-          </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <p class= "brown-text text-darken-2">Web Developer</p>
-              <p class= "brown-text text-darken-2">Phone: 201-993-2892</p> 
-              <p class= "brown-text text-darken-2">Email: senthilselvak@gmail.com</p>
-            </div>
-          </div> <!-- card Stacked-->
-        </div><!-- horizontal -->
-      </div><!-- m8 inside m6-->
-     </div> <!--row inside card div-->
-
-     <div class="row"><!--story card goes here-->
-<div class="card gray-blue lighten-5">
-            <div class="card-content brown-text">
-              <h3 class="card-title">About Me</h3>
-                <p>Welcome to my page. As an inquisitive and flexible problem solver, I have always been attracted to new learning opportunities to further my skillset. </p>
-
-                <p> My training as a Full Stack Web Developer has imbued me with a passion for all aspects of web development. I am extensively well-versed with both front and back end web development, specializing in JavaScript, JQuery HTML, CSS, Node.js, Bootstrap and Media Queries, and have an innate love for learning new NPM packages. I have experience with relational databases, MySQL and Oracle, and a good understanding of the Firebase database. </p>
-
-                <p>When I am not coding, I volunteer as a teacher at New Jersey’s Thiruvalluvar Tamil School.</p>
-            </div> <!--end card contant-->
-          </div> <!--end crad -->
-  </div> <!--story set-->
-</div> <!-- card div -->
-
-    <div class = "col m6"> <!--skillset -->
-          
-   <div class="card transparent lighten-4 storyContainer">
-      <div class="card-content">
-         <span class="card-title"><h3> Skill Set </h3></span>
-    <table>
-     <tbody>
-      <tr>
-         <td>
-            <div class="chip brown lighten-5">
-              <img src="assets/Images/HTML_Logo.png"> HTML 5
-            </div>
-         </td>
-
-          <td>
-            <div class="chip brown lighten-5">
-              <img src="assets/Images/CSS3_logo.png">CSS3
-            </div>
-          </td>
-
-          <td>
-            <div class="chip brown lighten-5">
-              <img src="assets/Images/javaScript.png"> JavaScript
-            </div>
-          </td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="chip brown lighten-5">
-            <img src="assets/Images/jQuery.png">JQuery
-          </div>
-        </td>
-
-        <td>
-          <div class="chip brown lighten-5">
-            <img src="assets/Images/firebase.png">Firebase
-          </div>
-       </td>
-
-        <td>
-          <div class="chip brown lighten-5">
-            <img src="assets/Images/nodeJS.png">Node JS
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="chip brown lighten-5">
-            <img src="assets/Images/reactJS.png">React
-          </div>
-        </td>
-
-        <td>
-          <div class="chip brown lighten-5">
-            <img src="assets/Images/mySql.png">My SQL
-          </div>
-        </td>
-
-        <td>
-          <div class="chip brown lighten-5">
-            <img src="assets/Images/mongodb.png">Mongodb
-          </div>
-        <td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="chip brown lighten-5">
-            <!-- <img src="assets/Images/npm.png"> -->
-          NPM</div>
-        </td>
-
-        <td>
-          <div class="chip brown lighten-5">
-            <img src="assets/Images/git.png">GitHub
-          </div>
-        </td>
-        <td>
-        </td>
-      </tr>
-
-      </tbody>
-
-    </table>      
-      </div>
-   </div> <!-- Story Container-->
-    </div><!-- skill set -->
-    
-    <div class = "col m1"> </div> <!--empty -->
-  </div> <!-- row 1 -->
+                		<p>When I am not coding, I volunteer as a teacher at New Jersey’s Thiruvalluvar Tamil School.</p>
+            		</div> <!--end card contant-->
+          		</div> <!--end card -->
+     		</div><!--story -->
+     	</div><!--row-->
+	</section>
 
 
-</div> <!-- parallax -->
-
-
-<!---///////////////////////////   projects //////////////////////// -->
-<!--///////////Heading ///////-->
-  <div class="row">
-      <div class="col s12 m12">
-        <div class="card transparent">
-          <span class="white-brown"><h1>Projects</h1>
-          </span>
-        </div>
-      </div>
-    </div>
-
-<!--///////////Heading ///////--> 
-<div class="parallax-container">
-  <div class="parallax"><img src="assets/Images/background.jpg"></div>
-    <div class="row"><!--row project-->
-      <div class="col m1"></div>
-      <div class="col m3"><!-- first project -->
-<!-- /////First Project-->
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="assets/Images/project/volunteer17.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Resume Padder<i class="material-icons right">more_vert</i></span>
-      <p><a href="https://github.com/Senthilselva/resumepadder">GitHub Link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Resume Padder<i class="material-icons right">close</i></span>
-        <p>Application designed for young adults searching for volunteer, community service, internship, and part-time positions. I was responsible for the backend MySql, Sequelize, Handlebar, Node.js, Bycrypt and NodeMailer NPM package.
-        </p>
-    </div>
+<!--///////row for Button /////-->
+	<div class="row buttonDiv">
+		<div class="col m8"></div>
+		<div class="col m2">
+			<a href="#project" class="waves-effect waves-light blue-grey btn-large"><i class="material-icons left"></i>Projects</a>
+		</div>
+		<div class="col m2">
+			<a href="#contact" class="waves-effect waves-light blue-grey btn-large"><i class="material-icons left"></i>Contact</a>
+		</div>
+		<div class="col m4"></div>
+	</div>
+<!--//row for buttons -->
 </div>
-<!-- /////First Project-->
-      </div><!--first project-->
+<!--////////////////Picture and Story End ///////////////-->
 
-      <div class="col m1"></div>
-      <div class="col m3"><!-- second project -->
-<!-- /////Second Project-->
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="assets/Images/project/Facethemusic.png">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Face The Music<i class="material-icons right">more_vert</i></span>
-      <p><a href="https://github.com/Senthilselva/FaceandMusic">GitHub Link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Face the Music<i class="material-icons right">close</i></span>
-        <p>Built a mood based  play-list generator. I was resposible for creating Firebase login, the embedding filepicker API, Firebase storage to store pictures and firebase database to store user information, for data validation using JQuery and JavaScript on my team 
-        </p>
-    </div>
+
+<!--//////////////////Project ////////////-->
+<div class="solidMiddle">
+	<section id="project">
+		<h2 class="blue-grey-text text-darken-4"> Project </h2>
+			<div class="row">
+				<!-- <div class ="col m1"></div> -->
+				<!-- /////First Project-->
+				<div class = "col m3">
+					<div class="card">
+			    		<div class="card-image waves-effect waves-block waves-light">
+			      			<img class="activator" src="assets/Images/project/volunteer17.jpg">
+			    		</div>
+			    		<div class="card-content">
+			      			<span class="card-title activator grey-text text-darken-4">Resume Padder<i class="material-icons right">more_vert</i></span>
+			      			<p><a href="https://github.com/Senthilselva/resumepadder">GitHub Link</a></p> <p><a href="https://guarded-wildwood-52348.herokuapp.com">Working Link</a></p>
+			    		</div>
+			    		<div class="card-reveal">
+			      			<span class="card-title grey-text text-darken-4">Resume Padder<i class="material-icons right">close</i></span>
+			        		<p>Application designed for young adults searching for volunteer, community service, internship, and part-time positions. <b>My responsiblty</b>  <ul> <li> MySql</li> <li> Sequelize</li><li> Handlebar</li><li> Node.js</li><li> Bycrypt</li> <li>NodeMailerand other NPM packages </li> </ul></p>
+			    		</div>
+					</div>
+				</div>
+				<!-- end of first project -->
+
+
+				<div class ="col m1"></div>
+				<!-- /////second Project-->
+				<div class = "col m3">
+					<div class="card">
+			    		<div class="card-image waves-effect waves-block waves-light">
+			      			<img class="activator" src="assets/Images/project/Facethemusic.png">
+			    		</div>
+			    		<div class="card-content">
+			      			<span class="card-title activator grey-text text-darken-4">Face The Music<i class="material-icons right">more_vert</i></span>
+			      			<p><a href="https://github.com/Senthilselva/FaceandMusic">GitHub Link</a></p> <p><a href="https://spotifyapp-564b4.firebaseapp.com/">Working Link</a></p>
+			    		</div>
+			    		<div class="card-reveal">
+			      			<span class="card-title grey-text text-darken-4">Face The Music<i class="material-icons right">close</i></span>
+			        		<p>Built a mood based  play-list generator.<b>My responsiblty</b> <ul> <li>Creating Firebase login</li> <li>mbedding filepicker API</li><li>Firebase storage to store pictures</li> <li>Firebase database to store user information</li> <li> Some JQuery and JavaScript</li></p>
+			    		</div>
+					</div>
+				</div>
+				<!-- end of second project -->
+
+				<div class ="col m1"></div>
+				<!-- /////thrid Project-->
+				<div class = "col m3">
+					<div class="card">
+			    		<div class="card-image waves-effect waves-block waves-light">
+			      			<img class="activator" src="assets/Images/project/Mongo.png">
+			    		</div>
+			    		<div class="card-content">
+			      			<span class="card-title activator grey-text text-darken-4">News Scrape<i class="material-icons right">more_vert</i></span>
+			      			<p><a href="https://github.com/Senthilselva/Mongo_scrape">GitHub Link</a></p> <p><a href="https://radiant-wildwood-33824.herokuapp.com/">Working Link</a></p>
+			    		</div>
+			    		<div class="card-reveal">
+			      			<span class="card-title grey-text text-darken-4">Face The Music<i class="material-icons right">close</i></span>
+			        		<p>This project uses Cheerio NPM to scrape the new from NPR. and the Stores it at Mongodb. Also lets you take notes. <b> Self project</b></p>
+			    		</div>
+					</div>
+				</div>
+				<!-- end of third project -->
+
+
+
+
+
+
+			</div><!-- end of first row -->
+	</section>
+<!--///////row for Button /////-->
+	<div class="row buttonDiv">
+		<div class="col m8"></div>
+		<div class="col m2">
+			<a href="#homework" class="waves-effect waves-light blue-grey btn-large"><i class="material-icons left"></i>Competent</a>
+		</div>
+		<div class="col m2">
+			<a href="#contact" class="waves-effect waves-light blue-grey btn-large"><i class="material-icons left"></i>Contact</a>
+		</div>
+		<div class="col m4"></div>
+	</div>
+<!--//row for buttons -->
 </div>
-<!-- /////Second Project-->
-      </div><!--second project-->
+<!--//////////////////Project End ////////////-->
+<!--////////////////////Skill Set and HomeWork ////-->
+<div class="solidMiddle">
+<h2 class="blue-grey-text text-darken-4"> Mini Apps </h2>
+	<section id="homework">
+		<div class="row">
+			<div class="col m6 skillhomework"> </div>
+			<div class="col m6">
+				<div class="card-content blue-grey-text text-darken-4">
+					<div class = "homeWorkLink blue-grey-text text-darken-4"> 
+              		<h5 class="card-title"> GitHub Links to Other Projects</h5>
+					<!-- links to home work--></div>
+				</div>
+			</div><!--homework div -->
+		</div><!--row -->
+	</section><!--homework-->
 
-<!-- third project-->
-<div class="col m1"></div>
-      <div class="col m3"><!-- third project -->
-<!-- /////Third Project-->
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="assets/Images/project/Mongo.png">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">News Scrape- Mongo<i class="material-icons right">more_vert</i></span>
-      <p><a href="https://github.com/Senthilselva/Mongo_scrape">GitHub Link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">News Scrape- Mongo<i class="material-icons right">close</i></span>
-        <p>This project uses Cheerio NPM to scrape the new from NPR. and the Stores it at Mongodb. Also lets you take notes.
-        </p>
-    </div>
+<!--///////row for Button /////-->
+	<div class="row buttonDiv">
+		<div class="col m8"></div>
+		<div class="col m2">
+			<a href="#" class="waves-effect waves-light blue-grey btn-large"><i class="material-icons left"></i>Home</a>
+		</div>
+		<div class="col m2">
+			<a href="#contact" class="waves-effect waves-light blue-grey btn-large"><i class="material-icons left"></i>Contact</a>
+		</div>
+		<div class="col m4"></div>
+	</div>
+<!--//row for buttons -->
+
 </div>
-<!-- /////third Project-->
-      </div><!--third project-->
-
-
-
-    </div><!--row project -->
-</div> <!--Project parallax -->
-
-<!-- footer nav bar -->
-  <nav class = "grey lighten-4">
-    <div class="brand-logo center">
-      <ul>
-              <li> 
-                <a href="#">
-                    <img src="assets/Images/email.png" class="img-responsive contactLink" alt="email">
-                </a>
-              </li>
-
-              <li> 
-                <a href="https://github.com/Senthilselva">
-                  <img src="assets/Images/git.png" class="img-responsive" alt="Git">
-                </a>
-              </li>
-
-              <li> 
-                <a href="https://www.linkedin.com/in/senthil-selvakumar-9815a8125?trk=hp-identity-name">
-                  <img src="assets/Images/linkedin.png" class="img-responsive" alt="Linkedin">
-                </a>
-              </li>
-
-              <li> 
-                <a href="http://stackoverflow.com/users/6651164/senthil">
-                  <img src="assets/Images/stackoverflow.png" class="img-responsive" alt="Stackoverflow">
-                </a>
-              </li>
-      </ul>
-    </div>
-    <div> 
-    <span class= "right brown-text text-darken-2">Phone: 201-993-2892</span> 
-      <span class= "left brown-text text-darken-2">Email: senthilselvak@gmail.com</span>
-    </div>
-    </nav>
-<!-- ///////Nav bar for footer -->
-
-
-<!-- ////////////////////////////////////////////////-->
-
-<!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    
-
-<script>
-  $(document).ready(function(){
-      $('.parallax').parallax();
-    });
-
-</script>
-
-
+<!--////////////////////Skill Set and HomeWork ////-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src = "assets/javascript/app.js" type="text/javascript"> </script>
 </body>
+<footer class="page-footer blue-grey" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Contact </h5>
+                <p class="white-text">Phone: 201-993-2892</p>
+                <p class="white-text">Email: senthilselvak@gmail.com</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Web Presence</h5>
+                <ul>
+                  <li>
+                  	<a class="white-text" href="https://github.com/Senthilselva">
+                  		<img class="logoBoder" src="assets/Images/GitHub.png" class="img-responsive" alt="Git">GitHub
+                	</a>
+                  </li>
+                  <li>
+                  	<a class="white-text" href="https://www.linkedin.com/in/senthil-selvakumar-9815a8125?trk=hp-identity-name">
+                  		<img class="logoBoder" src="assets/Images/linkedin.png" class="img-responsive" alt="Linkedin">Linked In
+                	</a>
+                  </li>
+                  <li>
+                  	<a class="white-text" href="http://stackoverflow.com/users/6651164/senthil">
+                    	<img class="logoBoder" src="assets/Images/stackoverflow.png" class="img-responsive contactLink" alt="email">Stack Overflow
+                	</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016-17
+            </div>
+          </div>
+        </footer>
+
 </html>

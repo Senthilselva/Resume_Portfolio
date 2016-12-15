@@ -1,66 +1,76 @@
-$(document).ready(function() {
+$(document).ready(function(){
 
-	console.log("document ready");
-
-//Open Model 
-$(".contactLink").on('click',function(){
-	console.log("here")
-        $('#contactModal').modal();      
-});
+	$(".button-collapse").sideNav();
+	$('.parallax').parallax();
 
 
-//Send mail
-$("#sendMail").on("click", function(){
-	console.log($('#EmailId').val().trim());
-	var isValid = true;
-	var vEmail = $('#EmailId').val().trim();
-	var vText = $('#txtText').val().trim();
+var createSkillBadges= function(divName){
+	var skillArr=["HTML-5", "CSS-3", "JavaScript", "JQuery", "Firebase", "NodeJS", "ReactJS","MySQL", "Mongodb", "GitHub","NPM"]
+	var cardTag = $("<div>");
+	cardTag.addClass("card-content");
+	var cardTitle = $("<h5>");
+	cardTitle.addClass("card-title")
+	cardTitle.addClass("blue-grey-text text-darken-4")
+	cardTitle.text("Competent");
+	cardTag.append(cardTitle);
+	console.log(cardTag);
+	$("."+divName).append(cardTag);
 
-debugger;
 
-	if(!vText || !vEmail){
-		isValid=false;
-	}
+	for(var i=0; i < skillArr.length; i++){
+		var chipDiv = $("<div>");
+		chipDiv.addClass("col m3");
 
-	if (typeof(vEmail) == 'undefined' || vEmail==null) {
-		isValid=false;  
-  	}
+		var skillChip = $("<div>");
+		skillChip.addClass("chip animated rotateIn");
+		skillChip.addClass("blue-grey white-text");
 
-	var atpos = vEmail.indexOf("@");
-    var dotpos = vEmail.lastIndexOf(".");
-    if (atpos<1 || dotpos<atpos+2 || dotpos+2>= vEmail.length) {
-     isValid = false;
-    } 
 
-	var eMessage = {
-		email:vEmail,
-		message:vText
-	}
-
-	if(!isValid){
-		$('#errMsg').html("Please type in a message and a Email-Id");
-		$('#contactModal').modal(); 
-		//return false;
-	} else {
-
-		var currentURL = window.location.origin;
-	    
-	    $.post(currentURL + '/mail', eMessage, function(data,err){
-	    	if (err != 'success'){
-	    		$('#errMsg').html(err);	
-	    		$('#contactModal').modal();
-	    		//return false;
-	    	} else {
-				alert("Thank you! Email Sent")
-				$('#contactModal').modal('hide'); 
-	    	}
-	    });
-
+		var imgTag = $("<img>");
+		imgTag.attr("src", "assets/images/"+skillArr[i]+".png")
+		skillChip.text(skillArr[i]);
+		skillChip.append(imgTag)
 		
+			
+		// $(skillChip).append(chipDiv);
+		$(chipDiv).append(skillChip);
+
+		$("."+divName).append(chipDiv);
+
 	}
 
+}
+
+createSkillBadges("skillMainPage");
+
+createSkillBadges("skillhomework");
 
 
-})//sendMail
+var createHomeWorkLinks = function(divName){
+	var apps= [{skill:"JavaScript", link: "https://github.com/Senthilselva/Week3-HW", name:"Hang Man"},
+			{skill:"JQuery", link: "https://github.com/Senthilselva/week-4-game", name:"RPG - Starwars"},
+			{skill:"JQuery&JavaScript", link: "https://github.com/Senthilselva/week-5-game", name:"Time Triva"},
+			{skill:"Rest API", link: "https://github.com/Senthilselva/Giphy", name:"Giphy"},
+			{skill:"Firebase", link: "https://github.com/Senthilselva/Giphy", name:"Rock Paper Siccors"},
+			{skill:"NodeJS-Express", link: "https://github.com/Senthilselva/FriendFinder", name:"Friend Finder"},
+			{skill:"NodeJS-Express-MySQL-ORM", link: "https://github.com/Senthilselva/Eat-Da-Burger", name:"Eat Da Burger"},
+			{skill:"NodeJS-Express-MySQL-Sequelize", link: "https://github.com/Senthilselva/SequelizedBurger", name:"Sequelize Burger"}
+	]		
+	var listTag = $("<ul>");
 
-});//on document ready
+	for(var key in apps){
+		var newDetail= apps[key];
+		console.log(apps[key].link)
+		var listItem = $("<li>");
+		var anchor = $("<a>");
+		anchor.attr("href",apps[key].link)
+		anchor.html(apps[key].skill + "-"+apps[key].name);
+
+		listItem.append(anchor);
+		listTag.append(listItem);
+	}
+	$("."+divName).append(listTag)
+}
+ 
+ createHomeWorkLinks("homeWorkLink");
+});
