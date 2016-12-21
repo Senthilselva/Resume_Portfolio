@@ -2,18 +2,8 @@ body, html {
     height: 100%;
 }
 
-.parallax { 
-    /* The image used */
-    background-image: url("../images/background.jpg");
-    /* Full height */
-    height: 100%; 
-    /*height: 800px; */
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.brand-logo{
+    margin-left: 25px;
 }
 
 
@@ -24,20 +14,24 @@ body, html {
 }
 
 .skillMainPage{
-	
+    padding-top:170px;
 }
 
 .solidMiddle{
 	margin-top: 50px;
-	padding-top: 50px;
+	/*padding-top: 50px;*/
 	height: 600px;
     padding-left: 25px;
     padding-right: 25px;
 
 }
+#aboutMe,
+#project{
+    padding-top:50px;
+}
 
 .activator{
-    height: 200px;
+    height: 150px;
     width: 100%;
 }
 
@@ -50,6 +44,18 @@ body, html {
 }
 
 .logoBoder{
-    background-color: white;
-    
+    background-color: white; 
+}
+
+#navContainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+#navContainer ul li { display: inline; }
+#navContainer ul li a { 
+    text-decoration: none;
+    padding: .2em 1em; 
 }

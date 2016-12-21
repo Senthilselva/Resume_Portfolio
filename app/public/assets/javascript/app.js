@@ -8,10 +8,10 @@ var createSkillBadges= function(divName){
 	var skillArr=["HTML-5", "CSS-3", "JavaScript", "JQuery", "Firebase", "NodeJS", "ReactJS","MySQL", "MongoDB", "GitHub"]
 	var cardTag = $("<div>");
 	cardTag.addClass("card-content");
-	var cardTitle = $("<h5>");
+	var cardTitle = $("<h4>");
 	cardTitle.addClass("card-title")
 	cardTitle.addClass("blue-grey-text text-darken-4")
-	cardTitle.text("Competent");
+	cardTitle.text("Competencies");
 	cardTag.append(cardTitle);
 	console.log(cardTag);
 	$("."+divName).append(cardTag);
@@ -73,4 +73,13 @@ var createHomeWorkLinks = function(divName){
 }
  
  createHomeWorkLinks("homeWorkLink");
+
+var resumeButton = '<div class="col m8"></div>' 
+					+'<div class="col m3">'
+			+'<a href="assets/files/senthil_selvakumar.pdf" class="waves-effect waves-light blue-grey btn-large">'
+			+'<i class="material-icons left">folder</i>My Resume</a>'
+		+'</div>'
+		+'<div class="col m5"></div>"'
+
+$('.buttonDiv').append(resumeButton);
 });
