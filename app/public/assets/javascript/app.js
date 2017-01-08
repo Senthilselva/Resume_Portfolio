@@ -47,14 +47,16 @@ createSkillBadges("skillhomework");
 
 
 var createHomeWorkLinks = function(divName){
-	var apps= [{skill:"JavaScript", link: "https://github.com/Senthilselva/Week3-HW", name:"Hang Man"},
+	var apps= [
+			{skill:"ReactJS", link:"https://github.com/Senthilselva/NYT-React", name:"NY Times Search"},
+			{skill:"NodeJS-Express", link: "https://github.com/Senthilselva/FriendFinder", name:"Friend Finder"},
+			{skill:"Firebase", link: "https://github.com/Senthilselva/RockPaperScissor", name:"Rock Paper Siccors"},
+			{skill:"NodeJS-Express-MySQL-ORM", link: "https://github.com/Senthilselva/Eat-Da-Burger", name:"Eat Da Burger"},
+			{skill:"NodeJS-Express-MySQL-Sequelize", link: "https://github.com/Senthilselva/SequelizedBurger", name:"Sequelize Burger"},
+			{skill:"JavaScript", link: "https://github.com/Senthilselva/Week3-HW", name:"Hang Man"},
 			{skill:"JQuery", link: "https://github.com/Senthilselva/week-4-game", name:"RPG - Starwars"},
 			{skill:"JQuery&JavaScript", link: "https://github.com/Senthilselva/week-5-game", name:"Time Triva"},
-			{skill:"Rest API", link: "https://github.com/Senthilselva/Giphy", name:"Giphy"},
-			{skill:"Firebase", link: "https://github.com/Senthilselva/Giphy", name:"Rock Paper Siccors"},
-			{skill:"NodeJS-Express", link: "https://github.com/Senthilselva/FriendFinder", name:"Friend Finder"},
-			{skill:"NodeJS-Express-MySQL-ORM", link: "https://github.com/Senthilselva/Eat-Da-Burger", name:"Eat Da Burger"},
-			{skill:"NodeJS-Express-MySQL-Sequelize", link: "https://github.com/Senthilselva/SequelizedBurger", name:"Sequelize Burger"}
+			{skill:"Rest API", link: "https://github.com/Senthilselva/Giphy", name:"Giphy"}		
 	]		
 	var listTag = $("<ul>");
 
