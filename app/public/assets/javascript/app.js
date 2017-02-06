@@ -5,7 +5,8 @@ $(document).ready(function(){
 
 
 var createSkillBadges= function(divName){
-	var skillArr=["HTML", "CSS", "JavaScript", "JQuery", "FirebaseDB", "NodeJS", "ReactJS","MySQL", "MongoDB", "GitHub"]
+	var skillArr=["HTML", "CSS", "JavaScript", "JQuery", "FirebaseDB", 
+					"NodeJS", "ReactJS","MySQL", "MongoDB", "GitHub"]
 	var cardTag = $("<div>");
 	cardTag.addClass("card-content");
 	var cardTitle = $("<h4>");
