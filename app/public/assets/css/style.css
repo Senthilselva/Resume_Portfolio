@@ -100,7 +100,11 @@ list-style-type: none;
 }
 
 .card1{
-  top: -75px;
-  display: none;
+  top: -70px;
+  left: -30px;
+  /*display: none;*/
 }
 
+.backdrop{
+  background-color: #000099;
+}

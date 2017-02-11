@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	$(".button-collapse").sideNav();
 	$('.parallax').parallax();
-
+	 $('.tooltipped').tooltip({delay: 50, html:true, position:"bottom"});
 
 var createSkillBadges= function(divName){
 	var skillArr=["HTML", "CSS", "JavaScript", "JQuery", "FirebaseDB", 
