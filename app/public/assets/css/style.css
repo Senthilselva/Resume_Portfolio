@@ -14,13 +14,13 @@ body, html {
 }
 
 .skillMainPage{
-    padding-top:170px;
+    padding-top:75px;
 }
 
 .solidMiddle{
-	margin-top: 50px;
+	margin-top: 25px;
 	/*padding-top: 50px;*/
-	height: 600px;
+	height: 350px;
     padding-left: 25px;
     padding-right: 25px;
 
@@ -58,4 +58,8 @@ list-style-type: none;
 #navContainer ul li a { 
     text-decoration: none;
     padding: .2em 1em; 
+}
+
+.buttonDiv{
+    position: absolute;
 }

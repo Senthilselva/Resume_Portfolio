@@ -24,7 +24,7 @@ var createSkillBadges= function(divName){
 
 		var skillChip = $("<div>");
 		skillChip.addClass("chip animated rotateIn");
-		skillChip.addClass("blue-grey white-text");
+		skillChip.addClass("cyan darken-2 white-text");
 
 
 		var imgTag = $("<img>");

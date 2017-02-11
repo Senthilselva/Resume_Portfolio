@@ -22,7 +22,7 @@
 <body>
 <!-- Nav bar -->
 <div class="navbar-fixed">
-<nav class = "cyan darken-2">
+<nav class = "blue-grey">
   <div class="nav-wrapper">
     <a href="#" class="brand-logo">  Senthil S</a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>          
@@ -44,69 +44,76 @@
 </div>
 <!--end navbar -->
 
-<!-- my name with annimation -->
+<!--///////row for resume Button /////-->
+	<!-- <div class="row buttonDiv"> </div> -->
+<!--//row for buttons -->
+
+	<!-- my name with annimation -->
 	
-	<!-- <div class="row"> -->
-	<div class="row centerbadge cyan lighten-5">
+	<div class="row">
+	<!-- <div class="row centerbadge"> -->
 		<div class="col m6 s12">
 	    	<h1 class="blue-grey-text text-darken-3 animated fadeInLeft">Senthil Selvakumar</h1>
 	    	<h5 class="blue-grey-text text-darken-3 animated fadeInRight">Fullstack Web developer</h5>
-
-	    	<!--pic and card -->
-	    	<div class = "col m8">
-	    	<div class="card horizontal cyan lighten-3">
-          		<div class="card-image">
-            		<img  src="assets/images/project/profile_pic.jpg"">
-          		</div>
-	          	<div class="card-stacked">
-					<div class="card-content">
-						<p class= "blue-grey-text text-darken-4">Web Developer</p>
-						<p class= "blue-grey-text text-darken-4">Phone: 201-993-2892</p> 
-						<p class= "blue-grey-text text-darken-4">Email: senthilselvak@gmail.com</p>
-					</div>
-	          	</div> <!-- card Stacked-->
-        	</div><!-- horizontal -->
-        	</div>
-
-
-
 	    </div>
 	    <div class = "col m6 s12">
 	    	<div class = "skillMainPage"></div>
 	 	</div>
 	</div>
 
+	<!-- <div class="row buttonDiv"> </div> -->
+
 <!-- picture and story -->
-<div class="solidMiddle cyan">
+<div class="solidMiddle">
 	<section id="aboutMe">
-	<!-- <h2 class="text-darken-4"> About Me </h2> -->
-     	<div class="card">
-            <div class="card-content">
-            <h3>About Me</h3>
-               	<p>Welcome to my page. As an inquisitive and flexible problem solver, I have always been attracted to new learning opportunities to further my skillset. </p>
+		<h2 class="blue-grey-text text-darken-4"> About Me </h2>
+	
+		<div class= "row"><!-- row 1 -->
+    		<div class = "col m4"> <!-- card div -->
+        			<div class="card horizontal transparent">
+          					<div class="card-image">
+            					<img  src="assets/images/project/profile_pic.jpg"">
+          					</div>
+	          				<div class="card-stacked">
+						        <div class="card-content">
+						        	<p class= "blue-grey-text text-darken-4">Web Developer</p>
+						            <p class= "blue-grey-text text-darken-4">Phone: 201-993-2892</p> 
+						            <p class= "blue-grey-text text-darken-4">Email: senthilselvak@gmail.com</p>
+						        </div>
+	          				</div> <!-- card Stacked-->
+        				</div><!-- horizontal -->
+     		</div> <!--card div-->
 
-                <p> My training as a Full Stack Web Developer has imbued me with a passion for all aspects of web development. I am extensively well-versed with both front and back end web development, specializing in JavaScript, JQuery HTML, CSS, Node.js, Bootstrap and Media Queries, and have an innate love for learning new NPM packages. I have experience with relational databases, MySQL and Oracle, and a good understanding of the Firebase database. </p>
+     		<div class = "col m8"> <!--story-->
+     			<div class="card">
+            		<div class="card-content blue-grey-text text-darken-4">
+              			<h3 class="card-title">About Me</h3>
+                		<p>Welcome to my page. As an inquisitive and flexible problem solver, I have always been attracted to new learning opportunities to further my skillset. </p>
 
-                <p>When I am not coding, I volunteer as a teacher at New Jersey’s Thiruvalluvar Tamil School.</p>
-            </div> <!--end card contant-->
-        </div> <!--end card -->
+                		<p> My training as a Full Stack Web Developer has imbued me with a passion for all aspects of web development. I am extensively well-versed with both front and back end web development, specializing in JavaScript, JQuery HTML, CSS, Node.js, Bootstrap and Media Queries, and have an innate love for learning new NPM packages. I have experience with relational databases, MySQL and Oracle, and a good understanding of the Firebase database. </p>
+
+                		<p>When I am not coding, I volunteer as a teacher at New Jersey’s Thiruvalluvar Tamil School.</p>
+            		</div> <!--end card contant-->
+          		</div> <!--end card -->
+     		</div><!--story -->
+     	</div><!--row-->
 	</section>
+
+
 
 </div>
 <!--////////////////Picture and Story End ///////////////-->
 
 
 <!--//////////////////Project ////////////-->
-<div>
-	<section id="project" class = "cyan lighten-5">
+<div class="solidMiddle">
+	<section id="project">
 		<h2 class="blue-grey-text text-darken-4"> Project </h2>
 			<div class="row">
 				 <div class ="col m1"></div> 
 				<!-- /////New Project-->
 				<div class = "col m3">
-				<img class="circle responsive-img" src="assets/images/project/Timetrax.png">
-
-					<!-- <div class="card circle responsive-img">
+					<div class="card">
 			    		<div class="card-image waves-effect waves-block waves-light">
 			      			<img class="activator" src="assets/images/project/Timetrax.png">
 			    		</div>
@@ -118,15 +125,13 @@
 			      			<span class="card-title grey-text text-darken-4">TimeTrax<i class="material-icons right">close</i></span>
 			        		<p>Developed this is Beta- version of application for 'Loefler Pools'. To maintain their Timesheet Management system. <b>My responsiblty</b>  <ul> <li> React</li> <li> Sequelize</li><li> Node.js</li><li>Passport Auth</li><li> Material - UI </ul></p>
 			    		</div>
-					</div> -->
+					</div>
 				</div>
 				<!-- end of final project -->
 				<div class ="col m1"></div>
 				<!-- /////First Project-->
 				<div class = "col m3">
-					<img class="circle responsive-img" src="assets/Images/project/volunteer17.jpg">
-					
-					<!-- <div class="card">
+					<div class="card">
 			    		<div class="card-image waves-effect waves-block waves-light">
 			      			<img class="activator" src="assets/Images/project/volunteer17.jpg">
 			    		</div>
@@ -138,7 +143,7 @@
 			      			<span class="card-title grey-text text-darken-4">Resume Padder<i class="material-icons right">close</i></span>
 			        		<p>Application designed for young adults searching for volunteer, community service, internship, and part-time positions. <b>My responsiblty</b>  <ul> <li> MySql</li> <li> Sequelize</li><li> Handlebar</li><li> Node.js</li><li> Bycrypt</li> <li>NodeMailerand other NPM packages </li> </ul></p>
 			    		</div>
-					</div> -->
+					</div>
 				</div>
 				<!-- end of first project -->
 
