@@ -28,6 +28,9 @@ body, html {
     padding-top:50px;
 }
 
+.projectGap{
+  margin-top: 25px;
+}
 #project{
   padding-top:25px;
   padding-left: 25px;  
