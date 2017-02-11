@@ -29,6 +29,7 @@ body, html {
 }
 
 #project{
+  padding-top:25px;
   padding-left: 25px;  
 }
 .activator{
@@ -97,3 +98,9 @@ list-style-type: none;
 .projectTopic4{
    left : 15px;
 }
+
+.card1{
+  top: -75px;
+  display: none;
+}
+
