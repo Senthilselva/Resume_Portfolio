@@ -85,4 +85,10 @@ var resumeButton = '<div class="col m8"></div>'
 		+'<div class="col m5"></div>"'
 
 $('.buttonDiv').append(resumeButton);
+
+$(".project1").hover(function(){
+    	$(this).addClass("z-depth-5");
+    }, function(){
+        $(this).addClass("z-depth-0");
+	});
 });

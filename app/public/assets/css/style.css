@@ -25,11 +25,13 @@ body, html {
     padding-right: 25px;
 
 }
-#aboutMe,
-#project{
+#aboutMe{
     padding-top:50px;
 }
 
+#project{
+  padding-left: 25px;  
+}
 .activator{
     height: 125px;
     width: 100%;
@@ -62,4 +64,19 @@ list-style-type: none;
 
 .buttonDiv{
     position: absolute;
+}
+
+.cirImg{
+    height: 220px;
+    width: 220px;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+.projectTopic{
+    position: relative;
+   top:-150px;
+   width: 220px;
+   font-weight: bold;
+   color: white;
 }
