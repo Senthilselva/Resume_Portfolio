@@ -79,8 +79,8 @@ var createHomeWorkLinks = function(divName){
 
 var resumeButton = '<div class="col m8"></div>' 
 					+'<div class="col m3">'
-			+'<a href="assets/files/senthil_selvakumar.pdf" class="waves-effect waves-light blue-grey btn-large">'
-			+'<i class="material-icons left">folder</i>My Resume</a>'
+			+'<a href="assets/files/senthil_selvakumar.pdf" class="waves-effect waves-light cyan btn-large">'
+			+'<i class="material-icons left">folder</i>Resume</a>'
 		+'</div>'
 		+'<div class="col m5"></div>"'
 
